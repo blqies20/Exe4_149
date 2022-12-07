@@ -26,6 +26,11 @@ namespace Exe4_149
             else
                 return (false);
         }
+        public void pop()
+        {
+            Console.WriteLine("\nThe popped element is: " + top.info);
+            top= top.next;
+        }
         public void push(int element)
         {
             Node fresh;
