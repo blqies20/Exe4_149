@@ -69,7 +69,28 @@ namespace Exe4_149
                 string sInput = Console.ReadLine();
                 char ch = Convert.ToChar(sInput == "" ? "0" : sInput);
                 switch(ch)
-                { }
+                {
+                    case '1':
+                        Console.Write("\nEnter a number: ");
+                        int num = Convert.ToInt32(Console.ReadLine());
+                        s.pop();
+                        break;
+                    case '2':
+                        if (s.empty())
+                        {
+                            Console.WriteLine("\nStack Empty");
+                            break;
+                        }
+                        s.push(ch); 
+                        break;
+                    case '3':
+                        s.display();
+                        break;
+                    case '4':
+                        return;
+                        default: Console.WriteLine("\nInvalid Choice");
+                        break;
+                }
             }
         }
     }
