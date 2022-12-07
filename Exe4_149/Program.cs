@@ -1,12 +1,13 @@
 ﻿using System;
 
+
 namespace Exe4_149
 {
     class Node
     {
-        public int info;
+        public char info;
         public Node next;
-        public Node (int i, Node n)
+        public Node (char i, Node n)
         {
             info = i;
             next = n;
@@ -26,6 +27,7 @@ namespace Exe4_149
             else
                 return (false);
         }
+            
         public void pop()
         {
             Console.WriteLine("\nThe popped element is: " + top.info);
